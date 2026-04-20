@@ -10,20 +10,34 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+  "pluginOptions": {
+      "i18n": {
+        "localized": true
+      }
     },
-    "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images", "files", "videos"]
-    },
-    "email": {
-      "type": "string"
-    },
+    "attributes": {
+      "name": {
+        "type": "string",
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      },
+      "avatar": {
+        "type": "media",
+        "multiple": false,
+        "required": false,
+        "allowedTypes": ["images", "files", "videos"]
+      },
+      "email": {
+        "type": "string",
+        "pluginOptions": {
+          "i18n": {
+            "localized": true
+          }
+        }
+      },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
